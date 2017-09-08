@@ -1,0 +1,10 @@
+name: WYSIWYG
+description: 'Provides WYSIWYG settings and tools'
+type: module
+core: 8.x
+dependencies:
+  - ckeditor
+  - editor
+  - filter
+version: 8.x-1.0
+package: 'Greencko Drupal Distribution'
