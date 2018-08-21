@@ -1,4 +1,4 @@
-langcode: de
+langcode: en
 status: true
 dependencies:
   config:
@@ -12,29 +12,39 @@ settings:
     rows:
       -
         -
+          name: 'Block Formatting'
+          items:
+            - Format
+        -
           name: Formatting
           items:
             - Bold
             - Italic
-        -
-          name: Linking
-          items:
-            - DrupalLink
-            - DrupalUnlink
+            - Underline
+            - '-'
+            - RemoveFormat
         -
           name: Lists
           items:
-            - BulletedList
             - NumberedList
+            - BulletedList
         -
           name: Media
           items:
             - Blockquote
-            - DrupalImage
+            - media
         -
-          name: 'Block Formatting'
+          name: Linking
           items:
-            - Format
+            - Linkit
+            - '-'
+            - Link
+            - Unlink
+        -
+          name: Direction
+          items:
+            - BidiLtr
+            - BidiRtl
         -
           name: Tools
           items:
@@ -42,11 +52,24 @@ settings:
   plugins:
     stylescombo:
       styles: ''
+    language:
+      language_list: un
+    autoembed:
+      status: ''
+    linkit:
+      linkit_profile: linkit_all_nodes
+    video_embed:
+      defaults:
+        children:
+          autoplay: true
+          responsive: true
+          width: '854'
+          height: '480'
 image_upload:
   status: true
   scheme: public
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: 0
-    height: 0
+    width: null
+    height: null

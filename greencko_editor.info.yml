@@ -1,0 +1,15 @@
+name: 'Greencko Editor'
+description: 'Provide editing related configuration.'
+type: module
+core: 8.x
+version: 8.x-6.x-dev
+package: Greencko
+dependencies:
+  - ace_editor
+  - ckeditor
+  - ckeditor_media_embed
+  - editor
+  - entity_embed
+  - image_resize_filter
+  - pathologic
+  - video_embed_wysiwyg
